@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('titulo', 'Acreedores')
 @section('contenido')
 <div id="acreedor">
 	<div class="container">
@@ -65,7 +66,7 @@
 @endsection
 @push('scripts')
 <script src="js/acreedor.js"></script>
-<script src="js/vue-resource.min.js"></script>
+
 @endpush
 
 <input type="hidden" name="route" value="{{url('/')}}">

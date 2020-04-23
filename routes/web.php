@@ -26,6 +26,15 @@ Route::view('user','Perfil.perfilvendedor');
 Route::view('error','Error.error');
 
 
+Route::view('menu','layouts.masterusermenu');
+
+//Zona de movimientos
+Route::view('entrada','Movimientos.entrada');
+
+//Zona de ventas
+Route::view('ventas','Vendedor.ventas');
+
+
 
 
 //zona de apis
@@ -36,7 +45,11 @@ Route::apiResource('apiCategoria','ApiCategoriaController');
 Route::apiResource('apiTipo','ApiTipoController');
 Route::apiResource('apiRol','ApiRolController');
 Route::apiResource('apiDatosUsuario','ApiDatoUsuarioController');
-
+Route::apiResource('apiProducto','ApiProductoController');
+Route::apiResource('apiEntrada','ApiEntradaController');
+Route::apiResource('apiVenta','ApiVentaController');
+Route::apiResource('apiDetalleEntrada','ApiDetalleEntradaController');
+Route::apiResource('apiDetalleVenta','ApiDetalleVentaController');
 
 //zona de logeo
 Route::post('login','ApiUsuarioController@validar');

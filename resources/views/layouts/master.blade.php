@@ -65,9 +65,14 @@
           <li><a href="{{url('perfil')}}"><i class="fa fa-info-circle"></i>   Perfil </a></li>
           <li><a href="{{url('sucursal')}}"><i class="fa fa-home"></i>  Sucursales</a></li>
           <li><a href="{{url('proveedor')}}"><i class="fa fa-address-book"></i>      Proveedores </a></li>
+          <li class="drop-down"><a href=""><i class="fa fa-reply-all fa-rotate-180"></i>     Movimiento</a>
+            <ul>
+              <li><a href="{{url('entrada')}}"><i class="fa fa-cart-arrow-down"></i>   Entrada</a>
+              </li>
+            </ul>
+          </li>
           <li class="drop-down"><a href=""><i class="fa fa-list-alt"></i>     Especificaciones de los productos</a>
             <ul>
-             <!--  <li><a href="#">Categorías</a></li> -->
               <li><a href="{{url('categoria')}}"><i class="fa fa-list"></i>   Categorías</a>
               <li><a href="{{url('tipo_articulo')}}"><i class="fa fa-gift"></i>   Tipos</a>
               </li>

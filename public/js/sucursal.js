@@ -15,6 +15,7 @@ new Vue({
 	},
 
 	data:{
+		nombre:'juan',
 		sucursales:[],
 		buscar:'',
 		id_sucursal: '',

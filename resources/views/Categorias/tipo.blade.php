@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('titulo', 'Tipos de artículos')
 @section('contenido')
 <div id="tipo_articulo">
 	<div class="container">
@@ -66,6 +67,6 @@
 @push('scripts')
 
 <script src="js/tipos_articulos.js"></script>
-<script src="js/vue-resource.min.js"></script>
+
 @endpush
 <input type="hidden" name="route" value="{{url('/')}}">

@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('titulo', 'Proveedores')
 @section('contenido')
 <div id="proveedor">
 	<div class="container">

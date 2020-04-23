@@ -1,10 +1,11 @@
 @extends('layouts.master')
+@section('titulo', 'Administrador')
 @section('contenido')
+
 <div id="datosusuario">
 	<div class="container">
 		<div>
-			<div>
-				<h2>Datos del usuario |<small> Usuario</small></h2>
+			<div><br><br><br><br>
 					<div class="row">
 						<div class="col-xs-2">
 						</div>
@@ -28,7 +29,7 @@
 											<td>@{{dato.apellidom}}</td>
 											<td>@{{dato.edad}}</td>
 											<td>
-												<span class="btn btn-warning btn-md fa fa-pencil" v-on:click="editarDatosUsuario(dato.id_usuario)"></span>
+												<span class="btn btn-warning fa fa-pencil" v-on:click="editarDatosUsuario(dato.id_usuario)"></span>
 											</td>
 										</tr>
 									</tbody>
@@ -36,8 +37,8 @@
 				    	</div>
 				    </div>
 				    <div class="row">
-      					<div class="col-md-6 col-xs-12">
-        					<div class="modal fade" tabindex="-1" role="dialog" id="datosu">
+      					<div class="col-xs-6">
+        					<div class="modal" tabindex="-1" role="dialog" id="datosu">
           						<div class="modal-dialog" role="document">
             						<div class="modal-content">
               							<div class="modal-header">
@@ -54,7 +55,7 @@
                 							<input type="text" placeholder="Edad" v-model="edad" class="form-control"><br>
               							</div>
               							<div class="modal-footer">
-                							<button type="submit" class="btn btn-success" v-on:click="actualizarDatosUsuario()" v-if="editando">Actualizar</button>
+                							<button class="btn btn-success" v-on:click="actualizarDatosUsuario()" v-if="editando">Actualizar</button>
               							</div>
             						</div>
           						</div>
@@ -68,7 +69,7 @@
 @endsection
 @push('scripts')
 <script src="js/perfil.js"></script>
-<script src="js/vue-resource.min.js"></script>
+
 @endpush
 
 <input type="hidden" name="route" value="{{url('/')}}">

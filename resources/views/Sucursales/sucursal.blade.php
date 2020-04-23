@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('titulo', 'Sucursal')
 @section('contenido')
 <div id="sucursal">
 	<div class="container">
@@ -7,6 +8,7 @@
 				<h2>Datos de las sucursales |<small> Sucursales</small></h2>
 					<div class="row">
 						<label>Buscar: </label><input type="text" placeholder="Escriba el nombre de la sucursal" class="form-control" v-model="buscar" value="buscar">
+						Nombre:@{{nombre}}
 						<div class="col-xs-2">
 						</div>
 						<div class="col-xs-10"><br>
@@ -70,6 +72,5 @@
 @push('scripts')
 
 <script src="js/sucursal.js"></script>
-<script src="js/vue-resource.min.js"></script>
 @endpush
 <input type="hidden" name="route" value="{{url('/')}}">

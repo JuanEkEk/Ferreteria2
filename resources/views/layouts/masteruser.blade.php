@@ -62,9 +62,9 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li><a href="{{url('perfil')}}"><i class="fa fa-info-circle"></i>   Perfil </a></li>
-<!--           <li><a href="{{url('sucursal')}}"><i class="fa fa-home"></i>  Sucursales</a></li>
-          <li><a href="{{url('proveedor')}}"><i class="fa fa-address-book"></i>      Proveedores </a></li>
+          <li><a href="{{url('user')}}"><i class="fa fa-info-circle"></i>   Perfil </a></li>
+          <li><a href="{{url('ventas')}}"><i class="fa fa-bell"></i>  Venta</a></li>
+<!--           <li><a href="{{url('proveedor')}}"><i class="fa fa-address-book"></i>      Proveedores </a></li>
           <li class="drop-down"><a href=""><i class="fa fa-list-alt"></i>     Especificaciones de los productos</a>
             <ul>
               <li><a href="{{url('categoria')}}"><i class="fa fa-list"></i>   Categorías</a>
